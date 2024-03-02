@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katherine</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -11,9 +12,9 @@
     </header>
     <main class="container">
       <section class="section1">
-            <h1>Какой-то текст</h1>
-            <div class="appointment"><span>Записаться</span></div>
-            <div class="appointment"><span>Бот</span></div>
+            <h1>ТАНТРИЧЕСКИЙ МАССАЖ И ОБУЧЕНИЕ ИСКУССТВУ ПРИКОСНОВЕНИЙ</h1>
+            <div class="appointment"><a href="https://t.me/katerina_osa1" style="text-decoration: none;color:  #e8f3ea;">Записаться</a></div>
+            <div class="appointment"><a href="https://t.me/katerina_osa1" style="text-decoration: none;color:  #e8f3ea;">Бот</a></div>
       </section>
       <section class="section2">
            <h1>Услуги</h1>
@@ -36,21 +37,88 @@
               <h6>Практика на гвоздях, гвоздестояние</h6>
           </div>
            </div>
-        </section>
+      </section>
       <section class="section3">
-        <h1>Меняем текст</h1>
+        
+        <div class="carousel" >
+        <a class="carousel-navigation-left" onclick="goNext(-1)"></a>
+        <div class="carousel-container">
+          <div class="carousel-service-type-info">
+            <h1>Что такое тантрический массаж?</h1>
+            <p>Тантрический массаж - восточная телесная практика, максимально расслабляющая тело и раздвигающая границы разума и сознания
+              Тантрический массаж является исключительным способом достичь полного расслабления всего организма и отключения разума. Она подарит вам не только облегчение, но и возрождение врожденной чувствительности и архетипической сексуальности.</p>
+           </div>
+          <div class="carousel-service-type-info">
+            <h1>Кашмирский тантрический массаж</h1>
+            <p>
+              Тантрический ритуал возрождения внутреннего ребёнка являеется истинным путем восстановления гармонии во всех трех фазах нашего существования: ребенка, подростка, взрослого. 
+
+Получая массаж в состоянии медитации Кашмирского Шиваизма, человек может достигнуть состояния полного спокойствия и воссоединиться с самим собой.
+            </p>
+          </div>
+          <div class="carousel-service-type-info">
+            <h1>Тантра для пар</h1>
+            <p>
+              Практический курс тантрического массажа для пары позволит насладиться новым импульсом ваших отношений и стать ближе с партнером.
+
+Тантрический массаж — это абсолютно новый вид слияния душ и тел, благодаря которому жизнь внутри пары обогащается любовью и ясностью, осознанностью и энергией, чувственностью и сексуальностью.
+            </p>
+          </div>
+           </div> 
+            
+        <a class="carousel-navigation-right" onclick="goNext(1)"></a>
+      </div>
+      </div>
       </section>
       <section class="section4">
         <div style="border: 1px solid  rgba(87,10,8);margin-left: 100px;">
-          <img src="" alt="Картинка">
+          <img src="img/IMG_9434.JPG" height="100%" alt="Картинка">
         </div>
-        <div style="padding: 20px;margin-right: 140px;">
+        <div style="padding: 20px;float: right;">
           <h1>Информация о мастере</h1>
+          <p> «Мой опыт энерго практиками и тантрой составляет 5 лет.
+Мои клиенты мужчины, женщины и пары ❤️
+Моя задача - возрождать и усиливать  чувственность и силу жизненной энергии в человеке.После моего тантрического массажа люди открывают в себе желание жить в еще большем удовольствии. 
+Они исполняют свои мечты, проживают каждый день из состояния любви. 
+И наблюдать эти изменения – то, что доставляет мне огромную радость.»
+          </p>
         </div>
       </section>
     </main>
     <footer>
       
     </footer>
+
+    <script>
+
+      let currentIndexItem=0;
+      nextShowItem();
+
+     function goNext(index){
+       currentIndexItem=currentIndexItem+index;
+       nextShowItem(currentIndexItem);
+     }
+
+  
+     function nextShowItem() {
+
+        
+        let items = document.getElementsByClassName("carousel-service-type-info");
+        if(Math.abs(currentIndexItem)==items.length){
+          currentIndexItem=0;
+        }
+        let tempIndex;
+        if(currentIndexItem<0){
+          tempIndex= (items.length+currentIndexItem);
+        }else{
+          tempIndex=currentIndexItem;
+        }
+        for (let i = 0; i < items.length; i++) {
+          items[i].style.display = "none";
+        }
+         
+        items[tempIndex].style.display = "block";
+      }
+    </script>
   </body>
 </html>
