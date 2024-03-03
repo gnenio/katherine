@@ -60,7 +60,13 @@ body{
     text-align: center;
     height: 400px;
     text-align: center;
-    padding: 80px 0 80px 0;
+    padding: 20px 0 80px 0;
+}
+
+@media (max-width: 1024px)  {
+    .section2{
+        height: 600px;
+    }
 }
 
 .section2 h1{
@@ -78,10 +84,26 @@ body{
     font-size:calc(8px + 2vw);
 }
 
-.services{
-    display: flex;
-    justify-content: space-around;
+
+
+@media (min-width: 1024px)  {
+    .services{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
 }
+
+@media (max-width: 1024px)  {
+    .services{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+}
+
+
 
 .service{
     height: fit-content;
