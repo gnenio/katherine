@@ -182,9 +182,22 @@ body{
     background-color:  #e8f3ea; 
     text-align: center;
     height: 400px;
-    display: flex;
     padding: 40px 0 80px 0;
-    justify-content: space-between;
+}
+
+@media (min-width: 768px)  {
+    .section4{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px)  {
+    .services{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }
 
 .section4 h1{
