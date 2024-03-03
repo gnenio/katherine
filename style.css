@@ -133,7 +133,14 @@ body{
 }
 
 .section3 p{
-    font-size:calc(13px + 2vw);
+    font-size:calc(12px + 2vw);
+}
+
+
+@media (max-width: 1024px)  {
+    .section3{
+        height: 480px;
+    }
 }
 
 .carousel {
@@ -148,8 +155,8 @@ body{
    
   .carousel-service-type-info {
     display: none;
-    padding-left:60px ;
-    padding-right:60px ;
+    padding-left:40px ;
+    padding-right:40px ;
   }
 
   .carousel-navigation-left{
