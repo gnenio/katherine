@@ -117,28 +117,22 @@ body{
 }
 
 
-
-
-
-footer{
-    background-color:  rgba(87,10,8);
-    color:  #e8f3ea; 
-    height: 10px;
-    font-size: 40px;
-    padding: 80px 0 80px 0;
-    text-align: center;
-}
-
 .section3{
     background-color:  rgba(87,10,8);
     color:  #e8f3ea; 
-    height: 400px;
+    height: 420px;
     padding:0 0 80px 0;
     text-align: center; 
     width: 100%;
 }   
 
-.section3 {
+
+.section3 h1{
+    font-weight: 900;
+    font-size:calc(17px + 2vw);
+}
+
+.section3 p{
     font-size:calc(13px + 2vw);
 }
 
@@ -201,3 +195,11 @@ footer{
     font-size:calc(5px + 2vw);
 }
 
+footer{
+    background-color:  rgba(87,10,8);
+    color:  #e8f3ea; 
+    height: 10px;
+    font-size: 40px;
+    padding: 80px 0 80px 0;
+    text-align: center;
+}
