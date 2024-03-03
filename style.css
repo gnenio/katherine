@@ -136,13 +136,6 @@ body{
     font-size:calc(12px + 2vw);
 }
 
-
-@media (max-width: 1024px)  {
-    .section3{
-        height: 480px;
-    }
-}
-
 .carousel {
     position: relative;
     width: 100%;
