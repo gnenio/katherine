@@ -19,7 +19,7 @@ body{
     color: #e8f3ea;
     background-color: rgba(87,10,8);
     text-align: center;
-    height: 400px;
+    height: 450px;
 
 }
 
@@ -33,16 +33,23 @@ body{
 }
 
 .appointment{
-    font-size: 30px;
     border: 2px solid #e8f3ea;
     height: 50px;
-    width: 150px;
+    line-height: 50px; 
+    width: 180px;
     text-align: center;
     padding: 12px;
     margin: 20px;
     display: inline-block;
     cursor: pointer;
+    vertical-align: middle;
 }
+
+
+.section1 .appointment{
+    font-size:calc(20px + 1vw);
+}
+
 .appointment span{
     vertical-align: middle;
 }
