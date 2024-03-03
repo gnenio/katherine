@@ -192,7 +192,7 @@ body{
     }
 }
 
-@media (max-width: 768px)  {
+@media (max-width: 900px)  {
     .services{
         display: flex;
         justify-content: space-around;
